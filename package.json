@@ -12,11 +12,22 @@
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
+    "css": "^3.0.0",
     "eslint": "8.27.0",
     "eslint-config-next": "13.0.3",
     "next": "13.0.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "saas": "^1.0.0",
+    "sass": "^1.56.1",
+    "scss": "^0.2.4",
     "typescript": "4.8.4"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "eslint-config-prettier": "^8.5.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1"
   }
 }
