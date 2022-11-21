@@ -1,0 +1,75 @@
+@import 'styles/variables.sass'
+.hero
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: $Poppins
+.hero_img
+    position: relative 
+    width: 100%
+    height: auto
+    text-align: center
+    background: url('./hero_img.png')
+    background-size: cover
+    background-repeat: no-repeat
+
+.hero_img:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: rgba(0,0,0,.5)
+
+.hero_content
+    position: relative
+    width: 60%
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100vh
+    margin: 0 auto
+.hero_content_inner
+    h1
+        font-size: 40px
+        color: #fff
+        margin-bottom: 20px
+    p
+        width: 75%
+        font-size: 18px
+        font-weight: normal
+        color: #fff
+        line-height: 25px
+        margin: 0 auto
+    button
+        widht: 100px
+        height: 50px
+        margin-top: 40px
+        margin-left: 1em
+        padding: 1em 2.3em
+        border-radius: 18px
+        border: solid 1px white
+        outline: none
+        font-size: 15px
+        text-transform: capitalize
+        background: none
+        color: #fff
+        box-shadow: 0 0 30px rgba(0,0,0,.3)
+        transition: all ease .2s
+    button:hover
+        background-color: #FA4A0C
+        border: 0
+
+@media (max-width:768px)
+    .hero_content
+        width:100%
+        padding: 0 50px
+        h1
+            font-size:30px
+        p
+            font-size: 14px
+            width: 100%
+            line-height: 12px
+        
+    
