@@ -1,5 +1,7 @@
 import NavItem from '../NavItem/NavItem'
-
+import styles from './Navbar.module.sass'
+import Image from 'next/image'
+import logo from 'components/assests/logo.png'
 const MENU_LIST = [
   {
     text: 'Home',
@@ -25,17 +27,12 @@ const MENU_LIST = [
 export default function Navbar() {
   return (
     <div>
-      Nabar
-      <nav>
-        <div className="logo"></div>
-
-        <div className="nav__menu-bar">
-          <div></div>
-          <div></div>
-          <div></div>
+      <nav className={styles.container}>
+        <div className="logo">
+          <Image src={logo} width="150" height="50" alt={'title'} />
         </div>
 
-        <div className="nav__menu-list">
+        <div className={styles.nav__menu}>
           {MENU_LIST.map((menu) => {
             return (
               <div key={menu.text}>
