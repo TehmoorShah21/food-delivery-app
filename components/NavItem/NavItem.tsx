@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import styles from './NavItem.module.sass'
+import cn from 'classnames'
 
 type NavLinkProps = {
   text: string
@@ -8,10 +10,13 @@ type NavLinkProps = {
 
 export default function NavItem({ href, text, active }: NavLinkProps) {
   return (
-    <div>
-      <Link href={href} className={`nav__link ${active ? 'active' : ''}`}>
-        {text}
-      </Link>
-    </div>
+    <Link
+      href={href}
+      className={cn(styles.navItem, {
+        [styles.active]: active,
+      })}
+    >
+      {text}
+    </Link>
   )
 }

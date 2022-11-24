@@ -1,9 +1,8 @@
-import Header from '../components/Header/Header'
+import Homepage from 'templates/Homepage'
+import type { NextPage } from 'next'
 
-export default function Home() {
-  return (
-    <div>
-      <Header />
-    </div>
-  )
+const Home: NextPage = () => {
+  return <Homepage />
 }
+
+export default Home
