@@ -1,5 +1,4 @@
-// import hero_img from 'components/assests/hero_img.png'
-// import Image from 'next/image'
+import Adverstisment from 'components/Advertisment/Advertisment'
 import styles from './Hero.module.sass'
 export default function Hero() {
   return (
@@ -8,14 +7,31 @@ export default function Hero() {
         <div className={styles.hero_content}>
           <div className={styles.hero_content_inner}>
             <p>Food app</p>
-            <h1>Why stay hungry when you can order from Bella Onojies</h1>
+            <h2>Why stay hungry when you can order from Bella Onojies</h2>
             <p>Download the bella onojes food app now on</p>
-
-            <button className={styles.btn}>Playstore</button>
+          </div>
+          <div className={styles.btn_group}>
+            <button
+              className={styles.btn}
+              onClick={() => console.log('Clicked')}
+            >
+              Playstore
+            </button>
             <button className={styles.btn}>App store</button>
           </div>
         </div>
       </div>
+      <div className={styles.advertisment}>
+        <Adverstisment
+          src="/Images/mobile.png"
+          width={548}
+          height={640}
+          alt="Mobile Image"
+        />
+      </div>
+      <div className={styles.hr}></div>
+      <p className={styles.hrPara}>How the app works</p>
+      <div className={styles.hr_mobile}></div>
     </div>
   )
 }
