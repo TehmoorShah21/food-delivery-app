@@ -1,8 +1,9 @@
 // import Detail from 'components/Detail/Detail'
 
 import Detail from 'components/Detail/Detail'
+import { DetailsContentType } from 'components/utils'
 
-const DETAILS_CONTENT = [
+const DETAILS_CONTENT: DetailsContentType[] = [
   {
     src: '/Images/mob1.png',
     subtitle: 'Create an account',
@@ -27,11 +28,10 @@ const DETAILS_CONTENT = [
 function Details() {
   return (
     <div>
-      {DETAILS_CONTENT.map((d, index) => {
+      {DETAILS_CONTENT.map((item, index) => {
         return (
           <div key={index}>
-            {' '}
-            <Detail {...d} />{' '}
+            <Detail item={item} index={index} />
           </div>
         )
       })}

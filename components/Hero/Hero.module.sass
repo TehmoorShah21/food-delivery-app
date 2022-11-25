@@ -1,4 +1,5 @@
 @import 'styles/variables.sass'
+@import 'styles/helpers'
 .hero
     padding: 0 !important
     margin-top: 155px
@@ -96,10 +97,15 @@
 .advertisment
     display: flex
     justify-content: center
-    align-items: start
+    align-items: flex-start
     position: absolute
     width: 100%
     top: 600px
+    height: 55vh
+    +m
+        position: absolute
+        top: 400px
+
 
 @media all and (max-width:768px)
     .hero
@@ -165,9 +171,12 @@
         top: 1000px
     
     .advertisment
-        position: absolute
-        top: 400px
-        left: -76px
+        
+        +t
+
+        +s
+
+      
     
 
 
