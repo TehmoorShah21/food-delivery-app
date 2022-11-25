@@ -20,15 +20,16 @@ export default function Hero() {
             <button className={styles.btn}>App store</button>
           </div>
         </div>
+        <div className={styles.advertisment}>
+          <Adverstisment
+            src="/Images/mobile.png"
+            width={548}
+            height={640}
+            alt="Mobile Image"
+          />
+        </div>
       </div>
-      <div className={styles.advertisment}>
-        <Adverstisment
-          src="/Images/mobile.png"
-          width={548}
-          height={640}
-          alt="Mobile Image"
-        />
-      </div>
+
       <div className={styles.hr}></div>
       <p className={styles.hrPara}>How the app works</p>
       <div className={styles.hr_mobile}></div>
