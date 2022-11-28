@@ -1,4 +1,13 @@
-
+@import 'styles/variables.sass'
+@import 'styles/helpers'
+.container
+    +m
+        top: -2800px
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: center
+        height: 900px
 .content
     display: flex
     justify-content: space-between
@@ -21,6 +30,12 @@
         line-height: 38px
         letter-spacing: 0.2px
         color: #737373
+    +m
+        padding: auto
+        padding: 0 !important
+        flex-direction: column-reverse
+        justify-content: center
+        align-items: center   
 .contentReverse
     display: flex
     flex-direction: row-reverse
@@ -44,26 +59,10 @@
         line-height: 38px
         letter-spacing: 0.2px
         color: #737373
-@media all and (max-width:768px)
-    .container
-        top: -2800px
-        display: flex
-        flex-direction: column
-        justify-content: flex-start
-        align-items: center
-        height: 900px
-     
-    .content
-        padding: auto
-        padding: 0 !important
-        flex-direction: column-reverse
-        justify-content: center
-        align-items: center   
-    .contentReverse
+    +m
         flex-direction: column-reverse
         justify-content: center
         align-items: center
         padding: 0 !important
-    
 
         
