@@ -1,15 +1,17 @@
-import Hero from 'components/Hero/Hero'
-import Navbar from 'components/Navbar/Navbar'
-import styles from './HomePage.module.sass'
+import Footer from 'components/Footer/Footer'
 import React from 'react'
-import Details from 'components/Details/Details'
+import styles from './HomePage.module.sass'
+//import Hero from 'components/Hero/Hero'
+//import Navbar from 'components/Navbar/Navbar'
+//import Details from 'components/Details/Details'
 
 const Home = () => {
   return (
     <div className={styles.layout}>
-      <Navbar />
+      {/* <Navbar />
       <Hero />
-      <Details />
+      <Details /> */}
+      <Footer />
     </div>
   )
 }
