@@ -1,3 +1,5 @@
+@import 'styles/variables.sass'
+@import 'styles/helpers'
 .navItem
     text-decoration: none
     margin: 0px 57px
@@ -5,14 +7,13 @@
     display: block
     font-size: 18px
     transition: ease 0.2s
+    +m
+        color: #737373
+        margin: 10px 16px
+        font-size: 26px
 .navItem:hover
     color: #FA4A0C !important
+    +m
+        cursor: pointer
 .navItem:active
     color: #FA4A0C
-
-@media (max-width: 768px)
-    .navItem
-        color: #FA4A0C
-        margin:16px
-        font-size: 26px
-       

@@ -1,47 +1,47 @@
-.wrapper
-    z-index: 1000
+@import 'styles/variables.sass'
+@import 'styles/helpers'
+.container
     position: fixed
     top: 0
-    width: 100%
-    height: 155px
-
-.container
-    margin: 0px auto
+    left: 0
+    right: 0
+    height: 80px
+    margin: 0px 10px
     display: flex
     justify-content: space-between
     align-content: center
     max-width: 100%
-    margin: 50px 50px 26px 90px
-
+    padding: 30px !important
+    +m
+        margin: 0
+        padding: 12px
+        position: absolute
 .hamburger
     display: none
+    +m
+        background: white
+        display: block !important
+        width: 30px
 
 .menuList
     display: flex
-    justify-content: flex-end
+    justify-content: flex-start
+    align-items: center
+    +m
+        display: none
 
 .active
-    height:250px
-    overflow: none !important
-
-@media (max-width: 768px)
-    // .hamburger
-    //     display: block !important
-    //     width: 30px
-    .menuList
-        display: none
+    +m
+        display: block
         position: absolute
+        right: 0
         top: 80px
-        right: 15px
-        margin: 10px
-        transition: 0.9s
-        // display: block
-        transition: 0.2s
-    .container
-        margin: 0
-        padding: 12px
-        justify-content: space-between
-        align-items: center
-        overflow: hidden
+        z-index: 100
+        height: 100vh !important
+        width: 100% !important
+        background: white
+        text-align: center
+
+        
 
         

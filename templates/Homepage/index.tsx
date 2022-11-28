@@ -1,16 +1,15 @@
-import Footer from 'components/Footer/Footer'
 import React from 'react'
 import styles from './HomePage.module.sass'
-//import Hero from 'components/Hero/Hero'
-//import Navbar from 'components/Navbar/Navbar'
-//import Details from 'components/Details/Details'
-
+import Navbar from 'components/Navbar/Navbar'
+import Hero from 'components/Hero/Hero'
+import Details from 'components/Details/Details'
+import Footer from 'components/Footer/Footer'
 const Home = () => {
   return (
     <div className={styles.layout}>
-      {/* <Navbar />
+      <Navbar />
       <Hero />
-      <Details /> */}
+      <Details />
       <Footer />
     </div>
   )

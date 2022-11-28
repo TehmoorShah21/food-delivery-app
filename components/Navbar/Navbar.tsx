@@ -32,34 +32,28 @@ const MENU_LIST = [
 export default function Navbar() {
   const [active, setactive] = useState(false)
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.container}>
+      <Image src={logo} width={150} height={50} alt={'title'} />
+      <div className={styles.hamburger}>
+        <Image
+          className={styles.bar_img}
+          src={menu}
+          width="40"
+          height="20"
+          alt={'title'}
+          onClick={() => {
+            !active ? setactive(true) : setactive(false)
+          }}
+        />
+      </div>
       <div
-        className={cn(styles.container, {
+        className={cn(styles.menuList, {
           [styles.active]: active,
         })}
       >
-        <div className="logo">
-          <Image src={logo} width={150} height={50} alt={'title'} />
-        </div>
-        <div className={styles.hamburger}>
-          <Image
-            className="bar_img"
-            src={menu}
-            width="40"
-            height="20"
-            alt={'title'}
-            onClick={() => {
-              !active ? setactive(true) : setactive(false)
-            }}
-          />
-        </div>
-        <div className={styles.menuList}>
-          {MENU_LIST.map((menu) => (
-            <div className={styles.navItems} key={menu.text}>
-              <NavItem {...menu} />
-            </div>
-          ))}
-        </div>
+        {MENU_LIST.map((menu) => (
+          <NavItem key={menu.text} {...menu} />
+        ))}
       </div>
     </div>
   )

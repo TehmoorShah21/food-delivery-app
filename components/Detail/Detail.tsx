@@ -9,7 +9,7 @@ interface DetailProps {
 
 function Detail({ item, index }: DetailProps) {
   return (
-    <div className={styles.container}>
+    <>
       {index == 1 ? (
         <div className={styles.contentReverse}>
           <Image
@@ -41,7 +41,7 @@ function Detail({ item, index }: DetailProps) {
           </div>
         </div>
       )}
-    </div>
+    </>
   )
 }
 

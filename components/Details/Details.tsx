@@ -1,5 +1,4 @@
-// import Detail from 'components/Detail/Detail'
-
+import styles from './Details.module.sass'
 import Detail from 'components/Detail/Detail'
 import { DetailsContentType } from 'components/utils'
 
@@ -27,7 +26,7 @@ const DETAILS_CONTENT: DetailsContentType[] = [
 
 function Details() {
   return (
-    <div>
+    <div className={styles.detailsContainer}>
       {DETAILS_CONTENT.map((item, index) => {
         return (
           <div key={index}>

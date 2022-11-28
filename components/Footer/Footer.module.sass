@@ -1,8 +1,11 @@
 @import 'styles/variables.sass'
 @import 'styles/helpers'
+.container
+    width: 100vw
+    +m
+        margin-top: -90px
 .hero
     padding: 0 !important
-    margin-top: 155px
     box-sizing: border-box
     font-family: $Poppins
     width: 100% !important 
@@ -16,13 +19,11 @@
         font-size: 22px
     +m
         width: 100%
-        height: 150vh
         justify-content: flex-start
         align-items: flex-center
-        margin-top: 80px
 
 .heroImg
-    width: 100% !important
+    width: 100%
     height: 440px
     text-align: center
     background: url('/Images/footer.png')
@@ -34,15 +35,16 @@
         background: #FAFAFA !important
         z-index: -1
     
-
+.logo
+    +m
+        display: none
 
 .heroContent
-    width: 60%
+    width: 70%
     display: flex
     flex-direction: column
     justify-content: flex-start
     align-items: center
-    height: 60vh
     margin: 73px auto
     +m
         .heroContent
@@ -112,10 +114,11 @@
             color: #FA4A0C
             font-size: 16px
             border: solid 1px #FA4A0C   
-            padding: 16px 0px
-            width: 200px
-            height: 68px
-            border-radius: 30px
+            padding: 18px 31px
+            gap: 10px
+            width: 142px
+            height: 64px
+            border-radius: 10px
         .btn:hover
             background-color: #FA4A0C
             color: #fff
@@ -125,3 +128,30 @@
             flex-direction: column
             justify-content: flex-start
             align-items: center
+
+.footerBar
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 40px 30px !important
+    +m
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: center
+        margin-top: 25px
+.icons
+    width: 180px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    
+.copyright
+    font-family: 'Roboto'
+    font-style: normal
+    font-weight: 700
+    font-size: 12px
+    line-height: 18px
+    text-align: right
+    letter-spacing: 0.1px
+    color: #5C5C5C
